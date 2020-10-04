@@ -10,7 +10,6 @@ loadconfig() {
 clear
 echo "Ok, let's load the number of the hwmon device on the config file"
 HWMONNUMBER=1
-HWMONNUMBER=$(cat /etc/hwmonnumber)
 echo "The number is $(echo $HWMONNUMBER), so the we'll control /sys/class/drm/card0/device/hwmon/hwmon$HWMONNUMBER"
 sleep 2
 clear
